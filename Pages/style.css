@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='700' preserveAspectRatio='none' viewBox='0 0 1440 700'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1122%26quot%3b)' fill='none'%3e%3crect width='1440' height='700' x='0' y='0' fill='%231e3266'%3e%3c/rect%3e%3cpath d='M1512 700L0 700 L0 179.43Q61.5 120.93%2c 120 182.43Q197.97 140.4%2c 240 218.37Q334.93 193.3%2c 360 288.22Q418.23 274.45%2c 432 332.68Q435.94 264.63%2c 504 268.57Q539.62 184.19%2c 624 219.81Q675.15 150.97%2c 744 202.12Q784.14 122.26%2c 864 162.4Q906.69 133.09%2c 936 175.79Q1001.76 121.55%2c 1056 187.31Q1128.29 187.59%2c 1128 259.88Q1171.71 231.59%2c 1200 275.3Q1219.89 175.19%2c 1320 195.08Q1363.13 166.21%2c 1392 209.34Q1491.78 189.12%2c 1512 288.89z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M1512 700L0 700 L0 362.68Q87.75 378.43%2c 72 466.18Q45.13 319.31%2c 192 292.44Q280.19 260.63%2c 312 348.82Q386.23 351.05%2c 384 425.28Q379.17 300.45%2c 504 295.62Q629.55 349.17%2c 576 474.72Q574.6 353.32%2c 696 351.91Q729.24 265.15%2c 816 298.4Q881.4 243.8%2c 936 309.2Q1063.78 316.98%2c 1056 444.76Q1012.3 329.06%2c 1128 285.36Q1257.59 342.95%2c 1200 472.54Q1173.3 325.84%2c 1320 299.14Q1429.99 289.13%2c 1440 399.12Q1489.26 376.38%2c 1512 425.65z' fill='rgba(56%2c 82%2c 208%2c 1)'%3e%3c/path%3e%3cpath d='M1464 700L0 700 L0 487.55Q27.38 442.93%2c 72 470.31Q115.56 393.87%2c 192 437.42Q220.94 394.37%2c 264 423.31Q344.17 383.48%2c 384 463.64Q455.83 415.47%2c 504 487.29Q623.86 487.14%2c 624 607Q631.46 494.46%2c 744 501.91Q793.02 430.94%2c 864 479.96Q916.7 460.66%2c 936 513.37Q980.2 485.57%2c 1008 529.77Q1058.83 508.6%2c 1080 559.42Q1087.91 495.33%2c 1152 503.24Q1165.1 444.34%2c 1224 457.44Q1277.56 391%2c 1344 444.55Q1455.13 435.69%2c 1464 546.82z' fill='rgba(19%2c 62%2c 115%2c 1)'%3e%3c/path%3e%3cpath d='M1512 700L0 700 L0 595.02Q51.14 526.16%2c 120 577.31Q177.48 562.79%2c 192 620.27Q249.48 605.75%2c 264 663.22Q314.81 642.03%2c 336 692.83Q401.89 638.73%2c 456 704.62Q500.86 677.48%2c 528 722.34Q544.43 666.77%2c 600 683.19Q595.82 607.01%2c 672 602.83Q724.49 535.32%2c 792 587.8Q819.96 543.75%2c 864 571.71Q920.63 556.35%2c 936 612.98Q986.11 591.09%2c 1008 641.2Q1066.54 627.74%2c 1080 686.28Q1109.29 595.57%2c 1200 624.86Q1245.8 550.65%2c 1320 596.45Q1378.57 583.02%2c 1392 641.58Q1439.45 569.03%2c 1512 616.47z' fill='rgba(232%2c 230%2c 230%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1122'%3e%3crect width='1440' height='700' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: #ffffff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+   text-align: center;
+    animation: fadInShow 2.5s ease-in-out;
+}
+@keyframes fadInShow{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    25%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.form-group{
+    margin: 20px 0;
+    text-align: start;
+}
+.form-group input{
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px  solid #a3a3a3;
+}
+button{
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    background: #03568d;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff;
+    margin-bottom: 20px;   
+}
+.otp-form{
+    display: block;
+    margin: 20px 0;
+}
+.otp-form p{
+    margin: 20px;
+    color: green;
+}
+.otp-group{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px;
+}
+.otp-group input{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom:2px solid #a3a3a3 ;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+img{
+    height: 150px;
+    margin: 15px;
+}
+button.disable{
+    opacity: 0.6;
+    pointer-events: none;
+    user-select: none;
+}
+.error-shake{
+    animation: shake 0.2s ease-in-out 0s 2;
+}
+@keyframes shake{
+    0%{
+        margin-left: 0rem;
+    }
+    25%{
+        margin-left: 0.5rem;
+    }
+    75%{
+        margin-left: -0.5rem;
+    }
+    100%{
+        margin-left: 0rem;
+    }
+}
